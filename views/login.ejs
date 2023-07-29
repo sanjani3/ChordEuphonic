@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>login page</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+        <style>
+            
+            body {
+                background-image: url("https://img.freepik.com/premium-photo/3d-illustration-purple-retro-headphones-purple-isolated-background-white-lights-headphone-icon-illustration_116124-7777.jpg");
+                background-size: 1600px 800px;
+            }
+
+            .last{
+                color: rgb(140, 230, 130);
+            }
+            .head{
+                margin-top: 6%;
+                color: rgb(211, 113, 180);
+            }
+            .button{
+                font-size: 23px;
+                padding: .5%;
+                opacity: 0.6;
+                transition: 0.2s;
+                display: inline-block;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .button:hover {opacity: 1}
+
+            #details {
+                font-size: larger;
+            }
+
+            #form {
+                padding-left: 90px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <br>
+        <br>
+        <div id="form">
+            <h3 class ="head" style="font-size: 60; color: white;">LOGIN PAGE</h3>
+            <form method = "GET" action = "/loginSubmit" id="details">
+                <p><b>E-mail : </b> <input type="text" name="email" style="font-size: 18px;" placeholder="E-mail"></p>
+                <p><b>password : </b> <input type = "password" name="password" style="font-size: 18px;" placeholder="password"></p>
+                    <button class = "button" type = "submit" style="margin-left: 90px; margin-top: 30px;">log in</button>
+                    <br>
+                <br><br>
+                <h3 class="last"> Don't have an account?</h4>
+                <a href = "/signup" style="color: rgb(157, 205, 157); font-size: 140%;"> Sign up</a>
+            </form>
+
+        </div>
+    </body>
+</html>
