@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>dashboard</title>
+    <style>
+      a:link {
+        color: rgb(246, 247, 241);
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: rgb(252, 247, 248);
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: rgb(138, 154, 245);
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      #parent {
+        display: grid;
+        grid-template-columns: 20% 80%;
+      }
+      .col-1 {
+        color: white;
+        background-color: #112432;
+        padding: 10px;
+      }
+      .col-2 {
+        color: white;
+        background-color: #4d1635;
+        padding: 10px;
+      }
+
+      #heading {
+        display: grid;
+        grid-template-columns: 60% 30% 10%;
+        background-color: brown;
+      }
+      .head {
+        color: white;
+        /* background-color: #4d1635; */
+        padding: 10px;
+      }
+      .search {
+        color: white;
+        padding-top: 30px;
+      }
+      .logout {
+        color: white;
+        /* background-color: #72d867; */
+        padding: 10px;
+      }
+
+      .bi {
+        margin-right: 10px;
+      }
+
+      #menu1 {
+        margin-bottom: 20px;
+      }
+
+      input[type="text"] {
+        width: 90px;
+        box-sizing: border-box;
+        border: 2px solid rgb(235, 229, 229);
+        border-radius: 4px;
+        font-size: 13px;
+        background-color: rgb(255, 255, 255);
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        height: 40px;
+        transition: width 0.4s ease-in-out;
+        border: 3px solid rgb(0, 0, 0);
+        transition: 0.5s;
+        outline: none;
+      }
+
+      input[type="text"]:focus {
+        width: 70%;
+        border: 3px dashed maroon;
+      }
+
+      .g1 {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+      }
+
+      #imag {
+        width: 180px;
+        height: 180px;
+        padding-top: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="heading" align="center">
+      <div class="head">
+        <h1>CHORDEUPHONIC</h1>
+      </div>
+      <div class="search">
+        <form class="container" action="/musicSubmit">
+          <input type="text" placeholder="Search music" name="music" />
+          <input type="submit" value="search" />
+        </form>
+      </div>
+      <div class="logout">
+        <a href="/"><h3>logout</h3></a>
+      </div>
+    </div>
+
+    <div id="parent" align="center">
+      <div class="col-1">
+        <h2>MENU</h2>
+        <a href="/recent">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-music-note-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2z"
+            />
+            <path fill-rule="evenodd" d="M12 3v10h-1V3h1z" />
+            <path
+              d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1V2.82z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"
+            /></svg
+          >Recent</a
+        ><br /><br />
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-heart-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+            /></svg
+          ><b>Favourites</b></a
+        ><br /><br />
+      </div>
+      <div class="col-2">
+        <h2>SONGS AND PODCASTS</h2>
+        <div class="g1">
+          <div class="g11">
+            <a href="https://www.youtube.com/watch?v=pBVtSwb5G7M"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/en/2/2e/Naatu_Naatu.jpg"
+                id="imag"
+              />
+              <figcaption>Naatu Naatu</figcaption></a
+            >
+          </div>
+          <div class="g12">
+            <a href="https://www.youtube.com/watch?v=dOKQeqGNJwY"
+              ><img
+                src="https://c.saavncdn.com/309/Inthandham-From-Sita-Ramam-Telugu-Telugu-2022-20220704185958-500x500.jpg"
+                id="imag"
+              />
+              <figcaption>Inthandam</figcaption></a
+            >
+          </div>
+          <div class="g13">
+            <a href="https://www.youtube.com/watch?v=yc0rN0pRIlA"
+              ><img
+                src="https://static.toiimg.com/photo/94906789/size-153675/94906789.jpg"
+                id="imag"
+              />
+              <figcaption>Mandarappoove</figcaption></a
+            >
+          </div>
+        </div>
+        <div class="g1">
+          <div class="g11">
+            <a href="https://www.youtube.com/watch?v=hLx2UCtO3Lc"
+              ><img
+                src="https://i.ytimg.com/vi/hLx2UCtO3Lc/maxresdefault.jpg"
+                id="imag"
+              />
+              <figcaption>6th Sense, Protection & More</figcaption></a
+            >
+          </div>
+          <div class="g12">
+            <a href="https://www.youtube.com/watch?v=TDSa7nZhlHY"
+              ><img
+                src="https://i.ytimg.com/vi/TDSa7nZhlHY/maxresdefault.jpg?v=6443d1f0"
+                id="imag"
+              />
+              <figcaption>Brain Hacks For Money & Growth</figcaption></a
+            >
+          </div>
+          <div class="g13">
+            <a href="https://www.youtube.com/watch?v=Q-zuTZuYeCg"
+              ><img
+                src="https://i.ytimg.com/vi/Q-zuTZuYeCg/maxresdefault.jpg"
+                id="imag"
+              />
+              <figcaption>How to break bad habits</figcaption></a
+            >
+          </div>
+        </div>
+        <div class="g1" style="padding-bottom: 50px">
+          <div class="g11">
+            <a
+              href="https://tunein.com/podcasts/History-Podcasts/Witness-History-p214234/"
+              ><img
+                src="https://yt3.googleusercontent.com/ytc/AGIKgqM7h79U7iF27_4knpuMQWLMa8ey8Bc9k0h10ADW=s900-c-k-c0x00ffffff-no-rj"
+                id="imag"
+              />
+              <figcaption>Witness History</figcaption></a
+            >
+          </div>
+          <div class="g12">
+            <a
+              href="https://tunein.com/podcasts/World-News/Global-News-Podcast-p134942/"
+              ><img
+                src="https://feeds.podcastmirror.com/~images/1671111655133244.jpeg"
+                id="imag"
+              />
+              <figcaption>Global News Podcast</figcaption></a
+            >
+          </div>
+          <div class="g13">
+            <a href="https://www.youtube.com/watch?v=XsFVp0PJzXc"
+              ><img
+                src="https://i.ytimg.com/vi/XsFVp0PJzXc/maxresdefault.jpg"
+                id="imag"
+              />
+              <figcaption>The Australian Podcast Ranker</figcaption></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
