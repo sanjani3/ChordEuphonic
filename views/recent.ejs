@@ -1,0 +1,65 @@
+<html>
+    <head>
+
+        <style>
+            body{
+                background-color: rgb(201, 236, 235);
+                margin: 40px; 
+                font-size: 30px; 
+                background-image: url("https://t4.ftcdn.net/jpg/02/93/16/45/360_F_293164580_Msy22GeO1P1mfB0l6RcjDJlDTZK91MvE.jpg");
+            }
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 90%;
+            }
+          
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: center;
+                padding: 8px;
+            }
+          
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+            h1 {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            body {
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                image-rendering: -webkit-optimize-contrast;
+                width: 100%;
+            }
+            .x {
+                background-color: rgb(255, 255, 255);
+            }
+            .h {
+                background-color: rgb(25, 102, 54);
+                color: white;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <h1 align="center" ><b>RECENT SEARCHES</b></h1>
+        <table class="table" align="center">
+            <tr class="h">
+                <th>Searchs</th>
+                <th>Links</th>
+            </tr>
+            <% for(var i = 0; i < SearchData.length; i++) {%>
+               
+            <tr class="x">
+                <td> <%= SearchData[i].search %></td>
+                <td><a href=  <%= SearchData[i].searchLink %> ><button>Click Me</button> </a></td>
+            </tr>
+            <%}%>
+        </table>
+    </body>
+</html>
