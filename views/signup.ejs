@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up page</title>
+    <style>
+      body {
+        background-color: rgb(191, 248, 248);
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtiwlSg9AP8d2bhN9mLZ1RreKN6mYqnXjo1w&usqp=CAU");
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 1000px;
+        margin: auto;
+        font-size: large;
+      }
+
+      .signupbtn {
+        float: left;
+        width: 50%;
+      }
+
+      .head {
+        margin-top: 6%;
+        color: rgb(255, 255, 255);
+        font-size: 45px;
+      }
+
+      p {
+        font-size: larger;
+      }
+
+      .button {
+        font-size: 23px;
+        padding: 0.5%;
+        opacity: 0.8;
+        transition: 0.2s;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .button:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="head" align="center">REGISTRATION PAGE</h1>
+    <h2 align="center">
+      Sign up for free to start listening.
+
+      <img
+        style
+        width="50px"
+        src="https://www.theinvestorspodcast.com/wp-content/uploads/2021/03/Mic-wireless.png"
+      />
+    </h2>
+    <br /><br />
+    <form action="/signupSubmit" method="get">
+      <b>Enter Your Email*</b><br /><br />
+      <input
+        name="email"
+        type="text"
+        size="60px"
+        placeholder="email"
+        required
+      /><br /><br />
+
+      <b>Create Password*</b><br /><br />
+      <input
+        name="password"
+        type="password"
+        size="60px"
+        placeholder="password"
+        required
+      /><br /><br />
+
+      <b>Confirm Password*</b><br /><br />
+      <input
+        name="confirmpwd"
+        type="password"
+        size="60px"
+        placeholder="password"
+        required
+      /><br /><br />
+
+      <b>Enter User name*</b><br /><br />
+      <input
+        name="usrname"
+        type="text"
+        size="60px"
+        placeholder="username"
+        required
+      /><br /><br />
+
+      <b>Date of Birth </b> <br /><br />
+      <input name="dob" type="date" /><br /><br />
+
+      <b>Gender</b><br /><br />
+      Female<input type="radio" name="gender" value="female" /> Male<input
+        type="radio"
+        name="gender"
+        value="male"
+      />
+      Other<input type="radio" name="gender" value="other" /><br />
+      <br /><br />
+
+      <input type="checkbox" name="check" />Share my registration data with the
+      providers for marketing purposes. <br /><br />
+      <button class="button" type="submit">Sign Up</button><br /><br />
+    </form>
+    <p>
+      <b>
+        Have an account?
+        <a href="/login">Log in.</a>
+      </b>
+    </p>
+  </body>
+</html>
